@@ -1,0 +1,25 @@
+body {
+  background-color: #000000;
+}
+
+.page-title {
+  text-align: center;
+}
+.bg-dark {
+  background-color: #000000;
+}
+
+.nav-title {
+  float: left;
+}
+
+.carousel {
+  width: 600px;
+  height: 600px;
+}
+
+.carousel-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
