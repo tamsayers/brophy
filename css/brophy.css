@@ -1,27 +1,45 @@
 body {
   background-color: #000000;
+  font-family: 'Cormorant Garamond', serif;
+  color: #FFFFFF;
 }
 
 h1 {
   margin-top: 1em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .bg-dark {
   background-color: #000000;
 }
 
-.nav-title {
-  float: left;
+.content {
+  width: 580px;
 }
 
 .carousel {
-  width: 600px;
-  height: 600px;
+  height: 580px;
 }
 
-.carousel-item > img {
+.content__vessels, .content__about {
+  display: none;
+}
+
+.content__about {
+  margin-top: 3em;
+}
+
+.content__about > p {
+  font-size: 1.25em;
+}
+
+.content__about > h3 {
+  font-size: 1.4em;
+  padding-top: 2em;
+}
+
+.carousel-item > img, .content__index > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -39,5 +57,5 @@ h1 a:hover, h1 a {
 
 .footer h2 {
   color: #FFFFFF;
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
