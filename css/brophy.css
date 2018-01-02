@@ -24,12 +24,12 @@ h2 {
   max-width: 768px;
 }
 
-.content__vessels {
+.content__carousel {
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.content__vessels, .content__about {
+.content__carousel, .content__about {
   display: none;
 }
 
