@@ -92,7 +92,7 @@ $(function() {
         caption: true
       },{
         src: "/words/am_i_a_good_person.jpg",
-        desc: "I am a good enough person, 23 x 23cms, mixed media",
+        desc: "Am I a good enough person, 23 x 23cms, mixed media",
         caption: true
       },{
         src: "/words/good_enough_person.jpg",
