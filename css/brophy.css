@@ -20,6 +20,10 @@ h2 {
   background-color: #000000;
 }
 
+.nav-item {
+  min-width: 5em !important;
+}
+
 .content {
   max-width: 768px;
 }
