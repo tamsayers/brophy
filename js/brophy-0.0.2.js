@@ -1,4 +1,6 @@
 $(function() {
+  var width = 1920;
+  var height = 1080;
   var images = {
     vessels: [{
         src: "/vessels/vessel_23x28_stoneware.sm.jpg",
@@ -6,7 +8,7 @@ $(function() {
         caption: true
       },{
         src: "/vessels/vessel_24x23_stoneware.sm.jpg",
-        desc: "Vessel, 24 x 28cm, Stoneware",
+        desc: "Vessel, 24 x 23cm, Stoneware",
         caption: true
       },{
         src: "/vessels/vessel_24x28_stoneware.sm.jpg",
@@ -68,7 +70,8 @@ $(function() {
     ],
     reliefs: [{
         src: "/reliefs/heart_vessel_relief_mixed_media.sm.jpg",
-        desc: "Heart vessel relief, mixed media"
+        desc: "Heart vessel relief, mixed media",
+        style: "padding-top: 10%"
       },{
         src: "/reliefs/blue_egg_shape.sm.jpg",
         desc: "Blue box, 84 x 64cms, mixed media",
@@ -93,6 +96,7 @@ $(function() {
       },{
         src: "/words/signs_of_life.sm.jpg",
         desc: "Signs of Life, 105 x 34cms, mixed media",
+        style: "padding-top: 20%",
         caption: true
       },{
         src: "/words/danger_of_death.sm.jpg",
@@ -151,8 +155,10 @@ $(function() {
 
     $.each(items, function(i, item) {
       var carouselItem = $('<div class="carousel-item"></div>');
+      var inlineStyle = (item.style) ? item.style : '';
+
       carouselItem.html(
-        '<img class="d-block w-100" src="/images' + item.src + '" alt="' + item.desc + '" />'
+        '<img class="d-block w-100" src="/images' + item.src + '" alt="' + item.desc + '" style="' + inlineStyle + '" />'
       );
 
       if (item.caption) {
